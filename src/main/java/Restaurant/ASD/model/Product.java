@@ -15,6 +15,9 @@ public class Product {
     private String description;
     private double price;
     private String category;
+    private boolean isActive = true;
+
+
 
     // Constructors
     public Product() {}
@@ -65,5 +68,12 @@ public class Product {
 
     public void setCategory(String category) { // Correct setter for category
         this.category = category;
+    }
+    public boolean isActive() {
+        return isActive;
+    }
+    
+    public void setActive(boolean active) {
+        isActive = active;
     }
 }
